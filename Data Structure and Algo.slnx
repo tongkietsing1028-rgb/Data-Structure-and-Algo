@@ -3,6 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="heap sort/heap sort.vcxproj" Id="16e938fe-f9d2-4b80-9690-167a558a88bb" />
-  <Project Path="priority queue/priority queue.vcxproj" Id="3421f698-5a3a-42ce-bb6a-6b684ec656ec" />
+  <Project Path="HeapQueue/heap sort.vcxproj" Id="16e938fe-f9d2-4b80-9690-167a558a88bb" />
+  <Project Path="PriorityQueue/priority queue.vcxproj" Id="3421f698-5a3a-42ce-bb6a-6b684ec656ec" />
 </Solution>
