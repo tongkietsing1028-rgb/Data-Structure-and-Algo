@@ -46,7 +46,7 @@ int main()
 	HeapSort(arr, 20);
 	for (int v : arr)
 	{
-		cout << v << " ";
+		cout << "\t" << v;
 	}
 
 }
