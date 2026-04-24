@@ -5,13 +5,13 @@ using namespace std;
 void CountSort(int arr[], int exp, int n)
 {
 	int count[10] = { 0 };
-	vector<int>output;
+	vector<int>output(n);
 	for (int i = 0;i < n;i++)
 	{
 		count[(arr[i] / exp) % 10]++;
 	}
 
-	for (int i = 1;i < n;i++)
+	for (int i = 1;i < 10;i++)
 	{
 		count[i]+= count[i-1];
 	}
