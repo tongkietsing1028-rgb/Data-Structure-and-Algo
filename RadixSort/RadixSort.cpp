@@ -27,3 +27,12 @@ void CountSort(int arr[], int exp, int n)
 		arr[i] = output[i];
 	}
 }
+
+void RadixFunction(int arr[], int exp, int n)
+{
+	int m = getMax(arr,n);
+	for (exp = 1;exp / m > 0;exp *= 10)
+	{
+		CountSort(arr, exp, n);
+	}
+}
