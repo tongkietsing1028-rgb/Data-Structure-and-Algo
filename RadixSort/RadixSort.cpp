@@ -2,6 +2,16 @@
 #include<vector>
 using namespace std;
 
+int getMax(int arr[], int n)
+{
+	int m = arr[0];
+	for (int i =0;i<n;i++)
+	{
+		if (m < arr[i])m = arr[i];
+	}
+	return m;
+}
+
 void CountSort(int arr[], int exp, int n)
 {
 	int count[10] = { 0 };
