@@ -1,5 +1,7 @@
 #include <iostream>
 #include<stdlib.h>
+#include<ctime>
+#include<algorithm>
 using namespace std;
 void Heapify(int arr[], int n, int i)
 {
@@ -44,9 +46,9 @@ int main()
 		arr[v] = (rand() % 100);
 	}
 	HeapSort(arr, 20);
-	for (int v : arr)
+	for (int i = 0;i < 20;i++)
 	{
-		cout << "\t" << v;
+		cout << arr[i] << " ";
 	}
 
 }
