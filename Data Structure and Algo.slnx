@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="HashTable/HashTable.vcxproj" Id="42da8e83-b343-44ba-b184-31d17fb02104" />
   <Project Path="HeapQueue/heap sort.vcxproj" Id="16e938fe-f9d2-4b80-9690-167a558a88bb" />
   <Project Path="PriorityQueue/priority queue.vcxproj" Id="3421f698-5a3a-42ce-bb6a-6b684ec656ec" />
   <Project Path="RadixSort/RadixSort.vcxproj" Id="0837933b-31ad-4192-b93f-0b502b9bbe74" />
