@@ -101,3 +101,14 @@ public:
 	}
 
 };
+
+int main()
+{
+	LinearHashTable HT;
+	HT.insert(10);
+	HT.insert(20);
+	HT.insert(11);
+	HT.insert(22);
+	HT.print();
+
+}
