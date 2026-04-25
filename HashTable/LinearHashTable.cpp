@@ -18,7 +18,7 @@ private:
 
 	int hash(int key)
 	{
-		return key % capacity;
+		return (key % capacity + capacity) % capacity;;
 	}
 	void rehash()
 	{
@@ -40,7 +40,7 @@ private:
 	}
 
 public:
-	LinearHashTable(int cap = 0)
+	LinearHashTable(int cap = 8)
 	{
 		capacity = cap;
 		table.resize(capacity);
@@ -49,7 +49,7 @@ public:
 
 	void insert(int key)
 	{
-		if (size / capacity >= 0.75)rehash();
+		if ((double)size / capacity >= 0.75)rehash();
 		int index = hash(key);
 		while (table[index].status == OCCUPIED)
 		{
@@ -82,7 +82,7 @@ public:
 		{
 			if (table[index].status == OCCUPIED && table[index].key == key)
 			{
-				table[index].status == DELETED;
+				table[index].status = DELETED;
 				size--;
 				return;
 			}
